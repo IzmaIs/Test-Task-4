@@ -108,6 +108,10 @@ html, body {
     }
     #x {
         color: #00B2A4;
+        padding-right: 10px;
+    }
+    #btn2 {
+        margin-top: 21px;
     }
     &__btn2:hover {
         color: #006058;
@@ -267,6 +271,7 @@ input[type="radio"]:checked + label:after {
         }
         &__block_right {
             width: 100%;
+            margin-top: 101px;
         }
         &__input--two::placeholder {
             color: gray;
