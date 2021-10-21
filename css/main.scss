@@ -62,7 +62,7 @@ html, body {
         background-color: white;
         text-align: left;
         color: #006058;
-        padding: 2px 0;
+        padding: 10px 0 0 0;
     }
     &__btns {
         display: flex;
@@ -98,7 +98,7 @@ html, body {
     &__btn2 {
         border: 0;
         font-size: 1em;
-        background-color: white;
+        background-color: #ffffff;
         color: #00B2A4;
         cursor: pointer;
         margin-top: 21px;
@@ -261,14 +261,10 @@ input[type="radio"]:checked + label:after {
         align-items: center;
         &__block_left {
             width: 100%;
-            height: 100%;
+            height: 150%;
         }
         &__block_right {
             width: 100%;
-        }
-        &__block {
-            width: 155px;
-            height: 250px;
         }
         &__input--two::placeholder {
             color: gray;
