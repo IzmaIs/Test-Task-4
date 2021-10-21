@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 20px;
+    &__block_left {
+        width: 40%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        color: #006058;
+        justify-content: space-around;
+    }
+    &__block {
+        width: 255px;
+        height: 350px;
+        background-color: gray;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    &__first_button {
+        font-size: 1em;
+        font-weight: bold;
+        border: 0;
+        background-color: white;
+        text-align: left;
+        color: #006058;
+    }
+    &__two_button {
+        font-size: 1em;
+        font-weight: bold;
+        border: 0;
+        background-color: white;
+        text-align: left;
+        color: #006058;
+    }
+    &__three_button {
+        font-size: 1em;
+        font-weight: bold;
+        border: 0;
+        background-color: white;
+        text-align: left;
+        color: #006058;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &__first_filter {
+        display: contents;
+    }
+    &__two_filter {
+        display: contents;
+    }
+    &__three_filter {
+        display: contents;
+    }
+    &__btn1 {
+        width: 255px;
+        height: 60px;
+        border-radius: 20px;
+        border: 0;
+        background-color: #00B2A4;
+        font-size: 1em;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 54px;
+        transition: 0.5s;
+    }
+    &__btn1:hover {
+        background-color: #006058;
+    }
+    &__btn2 {
+        border: 0;
+        font-size: 1em;
+        background-color: white;
+        color: #00B2A4;
+        cursor: pointer;
+        margin-top: 21px;
+        text-decoration: underline;
+    }
+    #x {
+        color: #00B2A4;
+    }
+    &__btn2:hover {
+        color: #006058;
+    }
+    &__list {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+    &__list li {
+        padding-top: 10px ;
+    }
+    &__list--flex {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    &__input--one {
+        width: 120px;
+        height: 60px;
+        margin-right: 15px;
+        border: 1px solid #C0E8E4;
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-size: 1.2em;
+        padding-left: 5px;
+        outline: none;
+    }
+    &__input--one::placeholder {
+        color: gray;
+    }
+    &__input--two {
+        width: 120px;
+        height: 60px;
+        border: 1px solid #C0E8E4;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding-left: 5px;
+        outline: none;
+        font-size: 1.2em;
+    }
+
+}
+.main__block_right {
+        width: 50%;
+        height: 50%;
+        display: flex;
+}
+
+#form {
+    display: contents;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked),
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label,
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #C0E8E4;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 3px solid #00B2A4;
+    border-bottom: 3px solid #00B2A4;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    left: 3px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    background-color: #00B2A4;
+}
+
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+
+@media (max-width: 720px){
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__block_right {
+            width: 100%;
+        }
+        &__block {
+            width: 155px;
+            height: 250px;
+        }
+        &__input--two::placeholder {
+            color: gray;
+        }
+        &__first_button:after {
+            content: "▼";
+        }
+        &__first_button.active:after {
+            content: "▲";
+        }
+        &__two_button:after {
+            content: "▼";
+        }
+        &__two_button.active:after {
+            content: "▲";
+        }
+        &__three_button:after {
+            content: "▼";
+        }
+        &__three_button.active:after {
+            content: "▲";
+        }
+        &__first_filter {
+            display: none;
+        }
+        &__two_filter {
+            display: none;
+        }
+        &__three_filter {
+            display: none;
+        }
+    }
+}
