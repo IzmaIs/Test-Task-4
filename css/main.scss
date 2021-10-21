@@ -44,6 +44,7 @@ html, body {
         background-color: white;
         text-align: left;
         color: #006058;
+        padding: 2px 0;
     }
     &__two_button {
         font-size: 1em;
@@ -52,6 +53,7 @@ html, body {
         background-color: white;
         text-align: left;
         color: #006058;
+        padding: 2px 0;
     }
     &__three_button {
         font-size: 1em;
@@ -60,12 +62,14 @@ html, body {
         background-color: white;
         text-align: left;
         color: #006058;
+        padding: 2px 0;
     }
     &__btns {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         flex-direction: column;
+        margin-top: 20px;
     }
     &__first_filter {
         display: contents;
@@ -86,7 +90,6 @@ html, body {
         color: white;
         font-weight: bold;
         cursor: pointer;
-        margin-top: 54px;
         transition: 0.5s;
     }
     &__btn1:hover {
@@ -188,6 +191,7 @@ input[type="radio"]:not(:checked) + label:before {
     height: 18px;
     border: 1px solid #C0E8E4;
     background-color: #ffffff;
+    border-radius: 3px;
 }
 
 input[type="checkbox"]:checked + label:before,
@@ -236,6 +240,7 @@ input[type="radio"]:not(:checked) + label:after {
     width: 14px;
     height: 14px;
     background-color: #00B2A4;
+    border-radius: 2px;
 }
 
 input[type="checkbox"]:not(:checked) + label:after,
