@@ -1,14 +1,28 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap");
-html, body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+input, textarea, button {
   font-family: "PT Sans Caption", sans-serif;
 }
 
+.header {
+  display: flex;
+  font-family: "PT Sans Caption", sans-serif;
+}
+.header__list {
+  padding-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.header__list a {
+  text-decoration: none;
+}
+
 .main {
+  font-family: "PT Sans Caption", sans-serif;
   width: 100%;
   height: 100%;
   display: flex;
@@ -27,7 +41,7 @@ html, body {
 .main__block {
   width: 255px;
   height: 350px;
-  background-color: gray;
+  background-color: #C4C4C4;
   border-radius: 15px;
   margin: 5px;
 }
