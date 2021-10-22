@@ -310,6 +310,33 @@ input[type=radio]:checked + label:after {
   .main__three_filter {
     display: none;
   }
+  .main__first_filter {
+    overflow: hidden;
+  }
+  .main__three_filter {
+    overflow: hidden;
+  }
+  .main__two_filter {
+    overflow: hidden;
+  }
+  .main__list {
+    animation: slideUp 1s forwards;
+    display: inline-block;
+    transform: translateY(200%);
+  }
+  .main__list--flex {
+    animation: slideUp 1s forwards;
+    display: flex;
+    transform: translateY(200%);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 /*# sourceMappingURL=filter.css.map */

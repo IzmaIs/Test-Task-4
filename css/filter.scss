@@ -134,6 +134,7 @@ input, textarea, button {
         padding: 0;
         list-style: none;
         margin: 0;
+
     }
     &__list li {
         padding-top: 10px ;
@@ -317,5 +318,33 @@ input[type="radio"]:checked + label:after {
         &__three_filter {
             display: none;
         }
+        &__first_filter {
+            overflow: hidden;
+        }
+        &__three_filter {
+            overflow: hidden;
+        }
+        &__two_filter {
+            overflow: hidden;
+        }
+        &__list {
+            animation: slideUp 1s forwards;
+            display: inline-block;
+            transform: translateY(200%);
+        }
+        &__list--flex {
+            animation: slideUp 1s forwards;
+            display: flex;
+            transform: translateY(200%);
+        }
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
     }
 }
