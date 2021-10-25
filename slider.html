@@ -3,8 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/mainall.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 </head>
+<header class="header">
+    <ul class="header__list">
+        <li><a href="index.html">Filter</a></li>
+        <li><a href="slider.html">Slider</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Picture</a></li>
+    </ul>
+</header>
 <body>
+<main class="main">
+    <div class="title">
+        <h1>Заголовок H1</h1>
+    </div>
+    <div class="main__slider">
+        <div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
+            <div
+                    class="carousel__slide"
+                    data-src="https://lipsum.app/id/1/900x600"
+                    data-fancybox="gallery"
+                    data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit."
+            >
+                <img src="https://lipsum.app/id/1/600x400" />
+            </div>
+            <div
+                    class="carousel__slide"
+                    data-src="https://lipsum.app/id/2/900x600"
+                    data-fancybox="gallery"
+                    data-caption="Ut semper, justo eget vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus vel metus. Quisque eu ornare ante, et gravida mauris"
+            >
+                <img src="https://lipsum.app/id/2/600x400" />
+            </div>
+            <div
+                    class="carousel__slide"
+                    data-src="https://lipsum.app/id/3/900x600"
+                    data-fancybox="gallery"
+                    data-caption="Hello 🖐"
+            >
+                <img src="https://lipsum.app/id/3/600x400" />
+            </div>
+            <div
+                    class="carousel__slide"
+                    data-src="https://lipsum.app/id/4/900x600"
+                    data-fancybox="gallery"
+                    data-caption="Another caption"
+            >
+                <img src="https://lipsum.app/id/4/600x400" />
+            </div>
+        </div>
+        <div id="thumbCarousel" class="carousel max-w-xl mx-auto">
+            <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/1/100x100" />
+            </div>
+            <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/2/100x100" />
+            </div>
+            <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/3/100x100" />
+            </div>
+            <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/4/100x100" />
+            </div>
+        </div>
+    </div>
+    <div class="main__right_block">
+        <div class="main__title">
+        <h1>Заголовок H1</h1>
+        </div>
+        <div class="main__text">
+            <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Равным образом реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития. Повседневная практика показывает...</p>
+        </div>
+        <div class="main__shop">
+            <span>1000 ₽</span>
+            <button>В Корзину</button>
+        </div>
+    </div>
+</main>
+<script>
+    const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+        Dots: false,
+    });
 
+    // Thumbnails
+    const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+        Sync: {
+            target: mainCarousel,
+            friction: 0,
+        },
+        Dots: false,
+        Navigation: false,
+        center: true,
+        slidesPerPage: 1,
+        infinite: true,
+    });
+
+    // Customize Fancybox
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        Carousel: {
+            on: {
+                change: (that) => {
+                    mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+                        friction: 0,
+                    });
+                },
+            },
+        },
+    });
+</script>
 </body>
 </html>

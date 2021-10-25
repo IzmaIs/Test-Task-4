@@ -4,23 +4,6 @@ input, textarea, button {
   font-family: "PT Sans Caption", sans-serif;
 }
 
-.header {
-  display: flex;
-  font-family: "PT Sans Caption", sans-serif;
-}
-.header__list {
-  padding-top: 10px;
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-.header__list a {
-  text-decoration: none;
-}
-
 .main {
   font-family: "PT Sans Caption", sans-serif;
   width: 100%;
