@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__google {
+    width: 70%;
+    margin-top: 40px;
+  }
+  &__yandex {
+    width: 70%;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+#map-google {
+  height: 450px;
+  border-radius: 50px;
+}
+
+#map-yandex {
+  height: 450px;
+  border-radius: 50px;
+}

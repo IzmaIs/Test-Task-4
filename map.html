@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>title</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/mainall.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=27c4d3ed-472d-484c-ba9a-7a47eeb1c27b&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
 </head>
 <body>
 <header class="header">
@@ -15,5 +18,14 @@
         <li><a href="picture.html">Picture</a></li>
     </ul>
 </header>
+<main class="main">
+    <div class="main__google">
+        <div id="map-google"></div>
+    </div>
+    <div class="main__yandex">
+        <div id="map-yandex"></div>
+    </div>
+</main>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzArJy-_wWd3YmE3RjD3bG-sexvL-MHVI&callback=initMap"></script>
 </body>
 </html>
