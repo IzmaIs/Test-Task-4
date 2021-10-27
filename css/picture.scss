@@ -1,0 +1,39 @@
+.main {
+  width: 100%;
+  height: 100%;
+  &__banner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  &__ban {
+    background-image: url("./fon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  &__vec {
+    background-image: url("./Vector 1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 94%;
+    z-index: 3;
+    position: absolute;
+  }
+  &__shadow {
+    background-image: url("./nastuh-abootalebi-ZtC4_rPCRXA-unsplash 2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+  }
+}

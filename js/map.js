@@ -25,6 +25,7 @@ function init(){
         iconImageHref: 'css/marker.png',
         iconLayout: 'default#image',
         iconImageSize: [49, 64],
+        iconImageOffset: [-23, -58]
     });
     myMap.geoObjects.add(myPlacemark)
 }
