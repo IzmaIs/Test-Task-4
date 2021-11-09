@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b27116a-ab86-4772-b605-ba7ffaefcb46" name="Changes" comment="Maps">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/picture.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/picture.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/picture.html" beforeDir="false" afterPath="$PROJECT_DIR$/picture.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +80,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maps" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
