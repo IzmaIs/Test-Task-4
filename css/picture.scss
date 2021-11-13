@@ -26,6 +26,8 @@
     z-index: 3;
     position: absolute;
     color: red;
+    animation: slideLeft 4s ;
+    transform: translateX(100%);
   }
   &__shadow {
     background-image: url("./nastuh-abootalebi-ZtC4_rPCRXA-unsplash 2.png");
@@ -36,5 +38,23 @@
     width: 100%;
     z-index: 2;
     position: absolute;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(25%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  75% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
