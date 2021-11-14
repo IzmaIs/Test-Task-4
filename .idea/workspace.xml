@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b27116a-ab86-4772-b605-ba7ffaefcb46" name="Changes" comment="Finish photo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/picture.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/picture.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
       <workItem from="1636630691589" duration="4056000" />
       <workItem from="1636707689448" duration="2353000" />
       <workItem from="1636827354013" duration="5255000" />
-      <workItem from="1636911436698" duration="392000" />
+      <workItem from="1636911436698" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="Maps">
       <created>1636486976942</created>
@@ -73,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636832012957</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finish photo">
+      <created>1636912019415</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636912019415</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
