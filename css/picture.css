@@ -79,6 +79,21 @@
   margin: 0;
 }
 
+path#check{
+  stroke: url(#paint0_linear_3:270);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 35642;
+  stroke-dashoffset: 0;
+  fill: none;
+  animation: ani 30s ease-in-out;
+}
+
+#svg {
+  position: absolute;
+}
+
 @media (max-width: 800px){
   .main {
     height: 135%;
@@ -100,5 +115,13 @@
   }
 }
 
+@keyframes ani {
+  from{
+    stroke-dashoffset: 35642;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 /*# sourceMappingURL=picture.css.map */
